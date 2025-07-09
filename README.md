@@ -21,7 +21,7 @@ This repository contains Terraform scripts demonstrating various examples using 
 | `terraform fmt`        | Formats Terraform configuration files.                           |
 | `terraform console`    | Opens a Terraform console for debugging and testing.             |
 | `terraform workspace`  | Manages Terraform workspaces.                                    |
-|------------------------|------------------------------------------------------------------|
+| `terraform refresh`    | Refreshes the state of managed resources.                        |
 ---
 
 ## Terraform in AWS
