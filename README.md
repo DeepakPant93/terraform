@@ -13,7 +13,15 @@ This repository contains Terraform scripts demonstrating various examples using 
 | `terraform apply`      | Applies the planned changes to your infrastructure.              |
 | `terraform destroy`    | Destroys the managed infrastructure.                             |
 | `terraform validate`   | Validates the configuration files in a directory.                |
-
+| `terraform apply --auto-approve`        | Applies the changes without user style.         |
+| `terraform graph`      | Generates a dependency graph of your Terraform configuration.    |
+| `terraform output`     | Displays the output values of your Terraform configuration.      |
+| `terraform state list` | Lists the resources in your Terraform state file.                |
+| `terraform state show` | Displays the details of a specific resource in your state file.  |
+| `terraform fmt`        | Formats Terraform configuration files.                           |
+| `terraform console`    | Opens a Terraform console for debugging and testing.             |
+| `terraform workspace`  | Manages Terraform workspaces.                                    |
+|------------------------|------------------------------------------------------------------|
 ---
 
 ## Terraform in AWS
