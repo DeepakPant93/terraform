@@ -1,0 +1,21 @@
+  {
+    "files.exclude": {
+    "**/.git/objects": true,
+    "**/.git/subtree-cache": true,
+    "**/node_modules/*": true,
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    "**/.DS_Store": true,
+    "**/.firebase": true,
+    "**/.build": true,
+    "**/dist": true,
+    "**/tmp": true,
+    "**/out": true,
+    "**/release": true,
+    "**/debug": true,
+    "**/.terraform": true,
+    "**/terraform.tfstate": true,
+    "**/terraform.tfstate.backup": true,
+    "**/.terraform.lock.hcl": true,
+  },
+}
