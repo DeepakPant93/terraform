@@ -38,7 +38,7 @@ terraform.rc
 
 # Ignore Terraform lock file
 .terraform.lock.hcl
-
+.terraform.tfstate.lock.info
 
 # Ignore MacOS specific files
 .DS_Store
