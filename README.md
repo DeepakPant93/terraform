@@ -72,6 +72,6 @@ region = ap-south-1
 
 ### Local Setup
 
-1. Install Terraform: https://www.terraform.io/docs/cli/install
+1. Install Terraform: https://developer.hashicorp.com/terraform/install
 2. Configure AWS credentials: https://registry.terraform.io/providers/hashicorp/aws/latest/docs#authentication
 3. Go to each folder and run `terraform init`
