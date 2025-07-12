@@ -14,11 +14,11 @@ Terraform provides advanced state management commands for inspecting and modifyi
 |---------------------------------|-----------------------------------------------------------|
 | `terraform state identities`    | List the identities of resources in the state             |
 | `terraform state list`          | List resources in the state                               |
-| `terraform state mv`            | Move an item in the state                                 |
+| `terraform state mv`            | Move an resource in the state                                 |
 | `terraform state pull`          | Pull current state and output to stdout                   |
 | `terraform state push`          | Update remote state from a local state file               |
 | `terraform state replace-provider` | Replace provider in the state                         |
-| `terraform state rm`            | Remove instances from the state                           |
+| `terraform state rm`            | Remove resources from the state                           |
 | `terraform state show`          | Show a resource in the state                              |
 
 These commands can be combined with Unix utilities like `grep` and `awk` for advanced state tasks.
