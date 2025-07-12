@@ -51,3 +51,20 @@ Copies an existing Terraform module from the specified `MODULE-SOURCE` into your
 `TF_LOG` is an environment variable used to enable detailed logging output during Terraform commands such as `plan`, `apply`, `init`, and more. It is extremely useful for debugging unexpected behaviors and diagnosing issues.
 
 ---
+
+## State File Management
+
+The `terraform.tfstate` file is not automatically deleted after destroying all resources using `terraform destroy`. It remains in the directory where the command was executed. This file contains critical information about the resources that were created and their configuration.
+
+### Deleting the State File
+
+- **Manual Deletion**: You can delete the `terraform.tfstate` file manually using your operating system's file manager or command-line tools.
+- **Using Terraform Commands**: Use the `terraform state rm` command to remove specific resources from the state file without deleting the entire file.
+
+### Important Considerations
+
+Be cautious when deleting the `terraform.tfstate` file:
+- It contains essential information about deployed resources and their current state.
+- Accidental deletion may result in losing track of resources and their configurations, making it difficult to manage or destroy them later.
+
+Always ensure you have a backup of the state file before making any modifications or deletions.
