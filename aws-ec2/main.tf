@@ -14,5 +14,5 @@ resource "aws_instance" "my_instance" {
   tags = {
     Name = "My EC2 Instance"
   }
-  
+
 }

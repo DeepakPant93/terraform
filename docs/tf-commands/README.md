@@ -22,7 +22,7 @@ This file contains categorized lists of commonly used Terraform commands in this
 | Command                          | Description                                                      |
 |-----------------------------------|------------------------------------------------------------------|
 | `terraform state list`            | Lists the resources in your Terraform state file.                |
-| `terraform state show`            | Displays the details of a specific resource in your state file.  |
+| `terraform state show <resource-name>`            | Displays the details of a specific resource in your state file.  |
 | `terraform refresh`               | Refreshes the state of managed resources.                        |
 
 ---
@@ -58,5 +58,7 @@ This file contains categorized lists of commonly used Terraform commands in this
 | Command                          | Description                                                      |
 |-----------------------------------|------------------------------------------------------------------|
 | `terraform init --upgrade`        | Upgrades provider plugins to the latest version.                 |
+| `terraform login`                 | Authenticates your CLI with Terraform Cloud to enable remote operations. |
+| `terraform logout`                | Removes saved credentials, logging you out from Terraform Cloud. |
 
 ---
