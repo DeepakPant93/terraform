@@ -6,6 +6,25 @@ Terraform uses a state file (`terraform.tfstate`) to keep track of the infrastru
 
 ---
 
+## State Management Commands
+
+Terraform provides advanced state management commands for inspecting and modifying the state file. These are useful for troubleshooting, refactoring, or advanced workflows. All state-modifying commands create a timestamped backup for safety.
+
+| Command                        | Description                                               |
+|---------------------------------|-----------------------------------------------------------|
+| `terraform state identities`    | List the identities of resources in the state             |
+| `terraform state list`          | List resources in the state                               |
+| `terraform state mv`            | Move an item in the state                                 |
+| `terraform state pull`          | Pull current state and output to stdout                   |
+| `terraform state push`          | Update remote state from a local state file               |
+| `terraform state replace-provider` | Replace provider in the state                         |
+| `terraform state rm`            | Remove instances from the state                           |
+| `terraform state show`          | Show a resource in the state                              |
+
+These commands can be combined with Unix utilities like `grep` and `awk` for advanced state tasks.
+
+---
+
 ## Local and Remote State
 
 By default, Terraform stores the state file locally in the current working directory. For team environments or enhanced reliability, you can store the state remotely using backends such as AWS S3.
