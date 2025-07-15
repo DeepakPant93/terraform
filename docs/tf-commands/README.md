@@ -13,7 +13,11 @@ This file contains categorized lists of commonly used Terraform commands in this
 | `terraform apply`                 | Applies the planned changes to your infrastructure.              |
 | `terraform apply --auto-approve`  | Applies the changes without prompting for approval.              |
 | `terraform destroy`               | Destroys the managed infrastructure.                             |
+| `terraform destroy -target <resource>`  |  Destroys a specific resource.                           |
 | `terraform validate`              | Validates the configuration files in a directory.                |
+| `terraform plan -replace=<resource>` | Creates a plan that replaces the specified resource.               |
+| `terraform apply -replace=<resource>` | Creates a new resource and replaces the specified existing resource. |
+
 
 ---
 

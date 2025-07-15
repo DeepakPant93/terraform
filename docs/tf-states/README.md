@@ -60,3 +60,17 @@ This configuration stores the state file in the specified S3 bucket.
 - Use `terraform refresh` to update the state file to match the real infrastructure. For example, if an EC2 instance is deleted outside Terraform, running `terraform refresh` will remove its entry from the state file.
 
 ---
+
+## Terraform import command
+
+Terraform import command allows you to import an existing resource into your Terraform state. This is useful when you have an existing resource and want to manage it with Terraform.
+
+```bash
+terraform import <resource_type>.<resource_name> <unique_ID>
+```
+
+Follow these docuemntation for more details: 
+- https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#read-1
+- https://developer.hashicorp.com/terraform/cli/commands/import 
+
+---

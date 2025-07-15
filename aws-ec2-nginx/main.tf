@@ -19,13 +19,7 @@ resource "aws_instance" "nginx_server" {
     Name = "NginxServer"
   }
 
-  user_data = <<-EOF
-              #!/bin/bash
-              apt-get update -y
-              apt-get install -y nginx
-              systemctl start nginx
-              systemctl enable nginx
-              EOF
+  user_data = file("install_nginx.sh")
 
   vpc_security_group_ids = [aws_security_group.nginx_sg.id]
 }
