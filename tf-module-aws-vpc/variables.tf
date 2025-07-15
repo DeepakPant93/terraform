@@ -1,7 +1,7 @@
 variable "name" {
   type        = string
   description = "The name of the VPC"
-  default     = "my_vpc"
+  default     = "${terraform.workspace}_my_vpc"
 }
 
 variable "cidr" {
@@ -53,7 +53,7 @@ variable "tags" {
   description = "A map of tags to assign to the VPC and its resources"
   default = {
     "Terraform" = "true"
-    "Project"   = "my_project"
+    "Project"   = "${terraform.workspace}_my_project"
   }
 
 }
