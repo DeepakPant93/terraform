@@ -79,3 +79,11 @@ In this example, the remote-exec provisioner connects to the EC2 instance via SS
 - **Error Handling**: If a provisioner fails, Terraform will mark the resource as tainted, and it will be destroyed and recreated on the next apply.
 - **Connection Details**: For remote-exec, ensure that the connection details are correctly specified and that the remote machine is accessible.
 - **Configuration Management**: For more complex provisioning tasks, consider using dedicated configuration management tools like Ansible, Chef, or Puppet.
+
+
+## References
+
+- https://developer.hashicorp.com/terraform/language/resources/provisioners/file
+- https://developer.hashicorp.com/terraform/language/resources/provisioners/local-exec
+- https://developer.hashicorp.com/terraform/language/resources/provisioners/remote-exec
+- https://www.youtube.com/watch?v=xZGO7gYGlQY
