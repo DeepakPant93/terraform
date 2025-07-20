@@ -37,6 +37,7 @@ This file contains categorized lists of commonly used Terraform commands in this
 |-----------------------------------|------------------------------------------------------------------|
 | `terraform output`                | Displays the output values of your Terraform configuration.      |
 | `terraform graph`                 | Generates a dependency graph of your Terraform configuration.    |
+| `terraform show`                  | Shows the current state or a saved plan in a human-readable format. |
 
 ---
 

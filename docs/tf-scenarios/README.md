@@ -150,4 +150,20 @@ terraform destroy -target=aws_instance.target_name
 This will destroy only the specified resource, not the entire infrastructure.
 
 ---
-    
+
+## 🧹 Scenario 9: Does Terraform Automatically Check Resource Health?
+
+**❓ Question:**  
+Does Terraform automatically monitor and heal resources if they become unhealthy or are deleted?
+
+**✅ Answer:**  
+No, Terraform does **not** automatically check or monitor the health of resources after they are created. Terraform is a declarative Infrastructure as Code (IaC) tool that provisions and manages infrastructure based on your configuration files. Once resources are created, Terraform assumes they remain in the desired state.
+
+- **No Continuous Monitoring:**  
+  Unlike tools such as Kubernetes, Terraform does not continuously monitor or self-heal resources. It does not detect if a resource is deleted or becomes unhealthy unless you run `terraform plan` or `terraform apply` again.
+
+- **Reconciliation:**  
+  If a resource is changed or deleted outside of Terraform, you must manually run `terraform plan` and `terraform apply` to detect and reconcile the drift.
+
+- **Example:**  
+  If Terraform creates an AWS EC2 instance and that instance is terminated manually or by AWS, Terraform will not recreate it automatically. You need to re-run Terraform to bring the infrastructure back to the desired state.
