@@ -23,3 +23,4 @@ This cheatsheet provides key Terraform concepts, commands, and tips to help you 
 - [HashiCorp Terraform Associate Certification Course (003) - Pass the Exam!](https://www.youtube.com/watch?v=SPcwo0Gq9T8)
 - [TERRAFORM 🔥 in ONE VIDEO with AWS 2025](https://www.youtube.com/watch?v=4JYtAf4M88Y)
 - [Terraform In One Shot](https://www.youtube.com/watch?v=S9mohJI_R34)
+- [Terraform Study Guide](https://github.com/ari-hacks/terraform-study-guide)
