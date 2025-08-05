@@ -1,7 +1,3 @@
-Here’s a comprehensive document on Terraform’s **meta‑arguments**, summarizing their purpose, syntax, usage patterns, and best practices:
-
----
-
 ## **🌐 What Are Meta‑Arguments?**
 
 Meta‑arguments are special arguments available in Terraform resource and module blocks that **modify how Terraform manages and orchestrates resources**. There are five core meta‑arguments:
